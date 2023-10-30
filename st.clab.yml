@@ -1,0 +1,66 @@
+name: st # short for streaming telemetry ;)
+prefix: ""
+
+mgmt:
+  network: st
+  ipv4-subnet: 10.0.0.0/24
+
+topology:
+  defaults:
+    kind: nokia_srlinux
+
+  kinds:
+    nokia_srlinux:
+      image: ghcr.io/nokia/srlinux:23.7.1
+      type: ixrd2l
+    linux:
+      image: ghcr.io/hellt/network-multitool
+
+
+  nodes:
+    ### POPs ###
+    POP1:
+      type: ixrd3l
+      group: pop
+      startup-config: ISP/configs/Nodes/POP1.cfg
+      mgmt-ipv4: 10.0.0.2
+    POP2:
+      type: ixrd3l
+      group: pop
+      startup-config: ISP/configs/Nodes/POP2.cfg
+      mgmt-ipv4: 10.0.0.3
+    POP3:
+      startup-config: ISP/configs/Nodes/POP3.cfg
+      mgmt-ipv4: 10.0.0.4
+      group: pop
+    POP4:
+      startup-config: ISP/configs/Nodes/POP4.cfg
+      mgmt-ipv4: 10.0.0.5
+      group: pop
+
+      ### IXs ###
+    IX1:
+      startup-config: ISP/configs/Nodes/IX1.cfg
+      mgmt-ipv4: 10.0.0.6
+      group: ix
+    IX2:
+      startup-config: ISP/configs/Nodes/IX2.cfg
+      mgmt-ipv4: 10.0.0.7
+      group: ix
+
+
+  links:
+    ## iBGP ##
+    - endpoints: ["POP1:eth2", "POP2:eth2"]
+    - endpoints: ["POP2:eth3", "POP4:eth3"]
+    - endpoints: ["POP4:eth4", "POP3:eth4"]
+    - endpoints: ["POP1:eth1", "POP3:eth1"] 
+    - endpoints: ["POP1:eth1", "POP2:eth1"] 
+    ## connection to IX1 ##
+    - endpoints: ["POP1:eth5", "IX1:eth1"]
+    - endpoints: ["POP3:eth5", "IX1:eth2"]
+    - endpoints: ["POP4:eth5", "IX1:eth3"]
+    ## connection to IX2 ##
+    - endpoints: ["POP1:eth5", "IX2:eth1"]
+    - endpoints: ["POP2:eth5", "IX2:eth2"]
+    - endpoints: ["POP4:eth5", "IX2:eth3"]
