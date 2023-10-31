@@ -1,1 +1,1 @@
-![rough graphj](ISP/graph.svg)
+![rough graphj](C:/Users/Vivek/Documents/containerlab/ISP/graph.svg)
