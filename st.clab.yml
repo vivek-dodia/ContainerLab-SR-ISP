@@ -55,7 +55,6 @@ topology:
     - endpoints: ["POP2:e1-3", "POP4:e1-3"]
     - endpoints: ["POP4:e1-4", "POP3:e1-4"]
     - endpoints: ["POP1:e1-1", "POP3:e1-1"] 
-    - endpoints: ["POP1:e1-1", "POP2:e1-1"] 
     ## connection to IX1 ##
     - endpoints: ["POP1:e1-5", "IX1:e1-1"]
     - endpoints: ["POP3:e1-5", "IX1:e1-2"]
