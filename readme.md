@@ -1,1 +1,1 @@
-![rough graphj]( ISP/graph.png)
+![rough graphj]( https://imgur.com/G6wSKBM)
