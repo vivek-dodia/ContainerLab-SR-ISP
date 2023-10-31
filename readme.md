@@ -1,9 +1,9 @@
-//to deploy
+# change into the cloned directory
+# and execute
 containerlab deploy --reconfigure
 
-// to destroy
+# to destroy
 containerlab destroy --cleanup
-
 
 ssh admin@managementIP
 default password - NokiaSrl1!
