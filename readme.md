@@ -1,8 +1,7 @@
-# change into the cloned directory
-# and execute
+## change into the cloned directory and execute
 containerlab deploy --reconfigure
 
-# to destroy
+## to destroy
 containerlab destroy --cleanup
 
 ssh admin@managementIP
