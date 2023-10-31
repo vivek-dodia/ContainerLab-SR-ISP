@@ -1,1 +1,1 @@
-![banner](graph.png)
+![banner](graphv1.jpg)
