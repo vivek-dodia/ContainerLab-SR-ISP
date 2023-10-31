@@ -22,29 +22,29 @@ topology:
     POP1:
       type: ixrd3l
       group: pop
-      startup-config: ISP/configs/Nodes/POP1.cfg
+      startup-config: configs/Nodes/POP1.cfg
       mgmt-ipv4: 10.0.0.2
     POP2:
       type: ixrd3l
       group: pop
-      startup-config: ISP/configs/Nodes/POP2.cfg
+      startup-config: configs/Nodes/POP2.cfg
       mgmt-ipv4: 10.0.0.3
     POP3:
-      startup-config: ISP/configs/Nodes/POP3.cfg
+      startup-config: configs/Nodes/POP3.cfg
       mgmt-ipv4: 10.0.0.4
       group: pop
     POP4:
-      startup-config: ISP/configs/Nodes/POP4.cfg
+      startup-config: configs/Nodes/POP4.cfg
       mgmt-ipv4: 10.0.0.5
       group: pop
 
       ### IXs ###
     IX1:
-      startup-config: ISP/configs/Nodes/IX1.cfg
+      startup-config: configs/Nodes/IX1.cfg
       mgmt-ipv4: 10.0.0.6
       group: ix
     IX2:
-      startup-config: ISP/configs/Nodes/IX2.cfg
+      startup-config: configs/Nodes/IX2.cfg
       mgmt-ipv4: 10.0.0.7
       group: ix
 
