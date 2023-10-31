@@ -1,3 +1,5 @@
+## prereqs are docker daemon / containerlab / git clone or wget
+
 ## change into the cloned directory and execute
 containerlab deploy --reconfigure
 
