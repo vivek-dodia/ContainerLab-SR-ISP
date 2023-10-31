@@ -8,5 +8,5 @@ containerlab destroy --cleanup
 ssh admin@managementIP
 default password - NokiaSrl1!
 
-![banner](graphv1.jpg)
+![banner](graphv2.jpg)
 ![banner](running_topology.jpg)
