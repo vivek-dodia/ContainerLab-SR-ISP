@@ -1,1 +1,1 @@
-![rough graphj]( https://imgur.com/G6wSKBM)
+![rough graph]( https://imgur.com/G6wSKBM)
