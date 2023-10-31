@@ -1,1 +1,2 @@
-![rough graph]( https://imgur.com/G6wSKBM)
+
+<img src="https://imgur.com/G6wSKBM" alt="rough graph" width="400"/>
