@@ -12,3 +12,4 @@ default password - NokiaSrl1!
 
 ![banner](graphv2.jpg)
 ![banner](running_topology.jpg)
+![banner](visualized_svg_for_the_topology_yml.jpeg)
